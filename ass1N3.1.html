@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+
+            function myFuncyion()
+            {
+                var myArr = [];
+                var sum = 0,
+                div = 1,
+                mul = 1;
+
+            
+                for(var i=0; i<3; i++)
+                {
+                    myArr[i] = Number(prompt("Enter element" +i+ ":"));
+                    sum+= myArr[i];
+                    div/= myArr[i];
+                    mul*= myArr[i];
+                }
+                document.getElementById("id").innerHTML = "sum of 3 values =" + sum +
+                "<br>multi of 3 values =" + mul + "<br>division of 3 values =" + div;
+            }
+                      
+        </script>
+        <button onclick="myFuncyion()">Click Here</button>
+
+        <p  id="id" style="color: red;"></p>
+    </body>
+</html>

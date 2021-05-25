@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+
+            function myFuncyion()
+            {
+                var myArr = [];
+                var increase ,
+                    decrease ;
+
+            
+                for(var i=0; i<5; i++)
+                {
+                    var x= Number(prompt("Enter element" +i+ ":"));
+                    myArr[i] = x;
+                    
+                }
+                document.writeln("my array = " + myArr + "<br>");
+                document.writeln("Increase sorting " + myArr.sort() + "<br>");
+                document.writeln("decrease sorting " +myArr.sort(function(a, b) {
+                        return b-a;
+                }));
+            }
+                      
+        </script>
+        <button onclick="myFuncyion()">Click Here</button>
+
+        <p  id="id" style="color: red;"></p>
+    </body>
+</html>

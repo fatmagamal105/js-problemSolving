@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+           var myDate = new Date();
+           var namex = prompt("Enter Your Name");
+            var telephone = prompt("Enter Your telephone");
+            var mobile = prompt("Enter Your mobile number");
+            var email = prompt("Enter Your email address");
+
+
+var favColor= prompt("Select Your Fac Color ","(1)Red (2)Green (3)Yellow (4)Blue (5)Purple");
+
+var color;
+var flag = 1;
+
+ // var count =str.match(/[e]/gi).length ;
+
+
+switch(favColor){
+   case "1":
+       case "red":
+           color="RED";
+           document.write("Hi Welcome ".fontcolor("red")+namex+"<br>");
+           document.write("your telephone number is : ".fontcolor("red")+ telephone+"<br>");
+           document.write("your mobile number is : ".fontcolor("red")+ mobile+"<br>");
+           document.write("your email address is : ".fontcolor("red")+ email+"<br>");
+           document.writeln( "<br>"+ "<br>"+ "<br>"+   "<br>" + "<br>"+"<br>"+ "<br>"+ "<br>"+   "<br>" + "<br>")
+           document.write("Today Is : ".fontcolor("red")+myDate.toDateString());
+       break;
+
+       case "2":
+       case "green":
+       color="Green";
+       document.write("Hi Welcome ".fontcolor("green")+namex+"<br>");
+       document.write("your telephone number is : ".fontcolor("green")+ telephone+"<br>");
+       document.write("your mobile number is : ".fontcolor("green")+ mobile+"<br>");
+       document.write("your email address is : ".fontcolor("green")+ email+"<br>");
+       document.writeln( "<br>"+ "<br>"+ "<br>"+   "<br>" + "<br>"+"<br>"+ "<br>"+ "<br>"+   "<br>" + "<br>")
+       document.write("Today Is : ".fontcolor("green")+myDate.toLocaleDateString());
+       break;
+
+       case "3":
+       case "yellow":
+       color="Yellow";          
+       document.write("Hi Welcome ".fontcolor("yellow")+namex+"<br>");
+       document.write("your telephone number is : ".fontcolor("yellow")+ telephone+"<br>");
+       document.write("your mobile number is : ".fontcolor("yellow")+ mobile+"<br>");
+       document.write("your email address is : ".fontcolor("yellow")+ email+"<br>");
+       document.writeln( "<br>"+ "<br>"+ "<br>"+   "<br>" + "<br>"+"<br>"+ "<br>"+ "<br>"+   "<br>" + "<br>")
+       document.write("Today Is : ".fontcolor("yellow")+myDate.toLocaleDateString());
+       break;
+
+       case "4":
+       case "blue":
+       color="Blue";
+       document.write("Hi Welcome ".fontcolor("blue")+namex+"<br>");
+       document.write("your telephone number is : ".fontcolor("blue")+ telephone+"<br>");
+       document.write("your mobile number is : ".fontcolor("blue")+ mobile+"<br>");
+       document.write("your email address is : ".fontcolor("blue")+ email+"<br>");
+       document.writeln( "<br>"+ "<br>"+ "<br>"+   "<br>" + "<br>"+"<br>"+ "<br>"+ "<br>"+   "<br>" + "<br>")
+       document.write("Today Is : ".fontcolor("blue")+myDate.toLocaleDateString());
+       break;
+       case "5":
+       case "purple":
+       color="Purple";
+       document.write("Hi Welcome ".fontcolor("purple")+namex+"<br>");
+       document.write("your telephone number is : ".fontcolor("purple")+ telephone+"<br>");
+       document.write("your mobile number is : ".fontcolor("purple")+ mobile+"<br>");
+       document.write("your email address is : ".fontcolor("purple")+ email+"<br>");
+      
+       document.writeln( "<br>"+ "<br>"+ "<br>"+   "<br>" + "<br>"+"<br>"+ "<br>"+ "<br>"+   "<br>" + "<br>")
+     
+      
+    document.write("Today Is : ".fontcolor("purple")+myDate.toLocaleDateString());
+     
+       break;
+       default:
+           flag = 0;
+       alert("Your Choice is not from the given list");
+}
+        </script>
+    </body>
+</html>

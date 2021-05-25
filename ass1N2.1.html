@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+   
+    <body>
+        <script>
+            const e = ["e","E"];
+
+            function myFunction(myStr)
+            {
+                let countt =0;
+                for(let letter of myStr.toLowerCase())
+                {
+                    if(e.includes(letter))
+                    {
+                        countt++;
+                    }
+                }
+                return countt;
+            }
+
+            const str = prompt("Enter Statment");
+            const myResult = myFunction(str);
+            document.write("Count of 'e,E' character = " + myResult); 
+        </script>
+    </body>
+</html>

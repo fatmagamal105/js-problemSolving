@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p id = "deg"> </p>
+        <script>
+           
+           
+            function myFunction(radius)
+            {
+               var area = ( radius * radius) * Math.PI;
+               return area; 
+            }
+
+            
+            function myFunction1(num)
+            {
+                return (Math.sqrt(num));
+            }
+
+            
+
+            function calculateDegree(degree)
+            {
+                var d = Math.cos(degree);
+               
+            }
+  
+ 
+            var r = parseInt(prompt("Enter the raduis of the area"));
+            alert("the area of circle = " + myFunction(r));
+
+            
+           
+            var n = parseInt(prompt("Enter the number"));
+            alert("the square root of " + n + "=" + myFunction1(n));
+
+            function cosDegr(deg){
+                var d = parseInt( Math.cos(deg));
+                document.getElementById("deg").innerHTML = " degree is "+ deg + " cos = "+ d;
+    
+             }
+   
+            var deg = Number(prompt("Enter The Degree : "));
+            cosDegr(deg);
+
+        </script>
+    </body>
+</html>

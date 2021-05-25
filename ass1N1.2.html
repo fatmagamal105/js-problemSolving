@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+          
+        function sum(x,y){
+
+        if(x <= 0 || x >=100){
+
+            alert("the first  number not valid");
+            return x+y;
+
+        }
+        else if(y<= 0 || y >=100){
+
+            alert("the second number not valid");
+            return x+y;
+
+        }
+        else{
+
+            return  x+ y;
+        
+        }
+
+
+
+
+        }
+        var x =  parseInt(prompt("Please Enter First Numbers"));
+        var y = parseInt( prompt("Please Enter Second Numbers"));
+        var result = sum(x,y);
+        document.write("the sum of variables = " + result);
+            
+        </script>
+
+</body>
+</html>
+
+   
