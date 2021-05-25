@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Bom B.3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Bom B.3 </h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="wrapper img" style="background-image: url(images/img.jpg);">
+						<div class="row">
+							<div class="col-md-9 col-lg-7">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4" style="text-align: center; color:#b2cfac; font-weight: 800;">User info</h3>
+                                    </h3>
+                                    <script>
+
+        
+
+                                        //confirm("are you wanna Submission");
+                                        // Q (2-1)
+                                        let url = location.href;
+                                        let params = (new URL(url)).searchParams;
+                                        console.log(params.get('name'));
+                                        var name = params.get('name');
+                                        var gender = params.get('gender');
+                                        var email = params.get('email') == '' ? 'Unknown' : params.get('email');
+                                        var phone = params.get('phone') == '' ? 'Unknown' : params.get('phone');
+                                        var job = params.get('job') == '' ? 'Unknown' : params.get('job');
+                                        var add = params.get('address') == '' ? 'Unknown' : params.get('address');
+                                        document.write('<h3>PAGE1: WELCOME</h3>' + 
+                                            'welcome (' + name.toUpperCase() + ')<br><br>' +
+                                            '- Your email: ' + email + '<br>' +
+                                            '- Your phone: ' + phone + '<br>' +
+                                            '- Your Job Title: ' + job + '<br>' +
+                                            '- Your Address: ' + add + '<br>' +
+                                            '- Your gender: ' + gender 
+                                        );
+                                    </script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+

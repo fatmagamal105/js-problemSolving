@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Bom B.3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Bom B.3 </h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="wrapper img" style="background-image: url(images/img.jpg);">
+						<div class="row">
+							<div class="col-md-9 col-lg-7">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4" style="text-align: center; color:#b2cfac; font-weight: 800;">REGISTRATION FORM</h3>
+                                    </h3>
+                                    <form id = "myForm"name ="form1" action="child.html" method="get">
+                                        <label for="name">Name:</label>
+                                        <input name="name" type="text" required class="form-control">
+                                        <label for="job">Job Title:</label>
+                                        <input name="job" type="text" required class="form-control">
+                                        <label for="address">Address:</label>
+                                        <input name="address" type="text" required class="form-control">
+                                        <label for="email">Email:</label>
+                                        <input name="email" type="email" required class="form-control">
+                                        <label for="phone">Mobile:</label>
+                                        <input name="phone" type="text" required class="form-control">
+                                        <label>Select Your Gender:</label>
+                                        <span >Gender</span><br>
+                                        <input type="radio" value="male" name="gender" id="male">
+                                        <label for="male">Male</label><br>
+                                        <input type="radio" value="female" name="gender" id="female">
+                                        <label for="female">Female</label><br>
+                                        <button id="btn" onclick="continueSubmision()" class="btn btn-primary">Load new document</button>
+                                        
+                                    </form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>      
+    <script>
+        function continueSubmision()
+        {
+            window.location.assign("child.html");
+    
+        }
+        
+        //  function continueSubmision()
+        // {
+                    
+        //     return confirm('stop or proceed');
+        //     setTimeout(function myFunction() {
+        //         window.location.assign("child.html");
+        //     },3000);
+    
+        // }
+        
+        // function continueSubmision()
+        // {
+        //     setTimeout( function() {
+                
+        //         return confirm('stop or proceed');
+                
+        //     }, 5000);
+        // }
+
+    </script>
+	
+	</body>
+</html>
