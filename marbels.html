@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        
+        <div class="parent">
+            <div class="solve">
+                <br>
+                <img class="marble" src="marble3.jpg" >
+                <img class="marble" src="marble3.jpg" >
+                <img class="marble" src="marble3.jpg" >
+                <img class="marble" src="marble3.jpg" >
+                <img class="marble" src="marble3.jpg" >
+                <img class="marble" src="marble3.jpg" >
+   
+              
+            </div>
+        </div>
+    <script>
+        var marbles = document.querySelectorAll('.marble');
+        var i = 0;
+        var chngMrbl;
+        function marbleAnimation() {
+            marbles.forEach((el, x) => {
+                if(el.getAttribute('src') == "marble3.jpg") {
+                    i = x;
+                }
+            })
+            chngMrbl = setInterval(()=> {
+                i += 1;
+                if(i == marbles.length) {
+                    i = 0;
+                } else {
+                    document.querySelector('[src="marble3.jpg"]').setAttribute('src', "marble1.jpg");
+                    marbles[i].setAttribute('src', "marble3.jpg");
+                }
+            }, 200);
+        }
+        marbles.forEach((el) => {
+            el.addEventListener("mouseover", () => {
+                clearInterval(chngMrbl);
+                document.querySelector('[src="marble3.jpg"]').setAttribute('src', "marble1.jpg");
+                el.setAttribute('src', "marble3.jpg");
+            })
+            el.addEventListener("mouseleave", () => {
+                marbleAnimation();
+            })
+        })
+        marbleAnimation();
+    </script>
+
+    </body>
+</html>
