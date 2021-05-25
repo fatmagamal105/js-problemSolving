@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C 3</title>
+    </head>
+    <style>
+        h2{
+            color: ghostwhite;
+        }
+    </style>
+    <body style ="background-image: url('1.jpg'); text-align: center; padding-top: 100px;">
+        <h2>Please Enter Value </h2>
+
+        <input id="n1" style="width: 198px;
+        height: 24px;
+        border-radius: 5px;
+        border: 1px;"><br><br>
+        <input id="n2"  style="width: 198px;
+        height: 24px;
+        border-radius: 5px;
+        border: 1px;"><br><br>
+        <input id="n3"  style="width: 198px;
+        height: 24px;
+        border-radius: 5px;
+        border: 1px;"><br><br>
+        <input id="n4"  style="width: 198px;
+        height: 24px;
+        border-radius: 5px;
+        border: 1px;"><br><br>
+        
+        <h3 id="reversed2" style="color: ghostwhite;"></h3>
+        <button id="btn2" style="background-color: #d33131;border: 1px;width: 125px;height: 34px;border-radius: 5px;font-size: 16px;color: #fcfafa;">user value</button><br><br>
+
+        <button id="btn1" onclick="reversedNum()" style="background-color: #d33131;border: 1px;width: 125px;height: 34px;border-radius: 5px;font-size: 16px;color: #fcfafa;">Input value</button>
+        <h3 id="reversed"  style="color: ghostwhite;"></h3>
+
+        
+        <script>
+           
+           function reversedNum(){
+            var arr=[10,20,30,40];            // for(var i=0;i<arguments.length;i++){
+            // // arguments[i].reverse();
+            //     arr[i] = arr.push(10);
+            // }
+           //return arr;
+          //console.log(arr);
+            document.getElementById("reversed").innerHTML=
+                "The numbers are (10,20,30,40) And The reversed array is "+ arr.reverse();
+    
+
+            }
+          
+
+            //Implementation 2 closure fun
+            function reversedNum2(){
+                var input1=document.getElementById("n1").value;
+                var input2=document.getElementById("n2").value;
+                var input3=document.getElementById("n3").value;
+                var input4=document.getElementById("n4").value;
+
+                function reversInner(){
+                    var arr=[];
+                    arr.push(input1);
+                    arr.push(input2);
+                    arr.push(input3);
+                    arr.push(input4);
+                    document.getElementById("reversed2").innerHTML="the reversed items are: "+arr.reverse();
+                    
+                }
+                return reversInner;
+            }
+            document.getElementById("btn2").addEventListener("click",function(){
+                var fun=reversedNum2();
+                fun();
+            });
+
+            
+            // var value = document.getElementById("input").value;
+            // var msg = document.getElementById("p01");
+            
+            // var lenArr = parseInt(prompt("Enter the length"));
+            // function  myFunction() {
+            
+            //     var arr =[];
+            //     for (let i = 0; i <lenArr; i++) {
+            //         arr[i] = arr.push(value);           
+            //     }  
+                
+            //     msg.innerHTML = "the final value" + arr.join();
+            // }
+            
+        </script>
+    </body>
+</html>

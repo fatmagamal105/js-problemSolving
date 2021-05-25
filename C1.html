@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>]C1</title>
+        <h2 id="p" style= "background-color: brown; color: cornsilk; "></h2>
+    </head>
+    <body>
+        <script>
+            function sum(a,b)
+            {
+                if(arguments.length > 2)
+                {
+                    try {
+                        throw "the function has more than 2 arguments"
+                    } catch (error) {
+                        document.getElementById("p").innerHTML =  error; 
+                    }
+                }else
+                {
+                    return a+b;
+                }
+            }
+           console.log(sum(2,3,5,6)); 
+           console.log(sum(2,5));
+           
+          
+        </script>
+    </body>
+</html>

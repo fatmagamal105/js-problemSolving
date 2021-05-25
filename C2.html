@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C2</title>
+    </head>
+    <body>
+        <p>Please Enter Value </p>
+
+        <input id="demo" type="text">
+        <input type="button" onclick="myFunction()" value="Test Input">
+        
+        <h3 id="p01" style= "background-color:darkgreen; color: cornsilk; "></h3>
+        
+        <script>
+
+            function myFunction() {
+                var message, x;
+                message = document.getElementById("p01");
+                message.innerHTML = "";
+                x = document.getElementById("demo").value;
+
+                try { 
+                    if(x == "")  {
+                        throw alert("Fun() Has No Parameter");
+                        throw "undefiend Value";
+
+                    }
+                        //throw "Fun() Has No Parameter";
+                        
+                    if(isNaN(x)) 
+                    {
+                        throw alert("That isnot a number PLz try again"); 
+                        throw "undefiend Value" ; 
+                    }
+                            
+                }
+
+                finally
+                {
+                     message.innerHTML = "";
+                }
+               
+                message.innerHTML = "Correct Value = " + x
+                
+            }
+        </script>
+    </body>
+</html>
