@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>B 2</title>
+        <h2 id="p" style= "background-color: brown; color: cornsilk; "></h2>
+    </head>
+    <body>
+        <script>
+        
+        
+        function MyFunction(width, height) {
+            
+            this.w = width;
+            this.h = height;
+        }
+
+
+        x = parseInt(prompt("Enter the width : "));
+        y = parseInt(prompt("Enter the width : "));
+        
+        var rectangle =  new MyFunction(x,y);
+        console.log("the width = " + rectangle.w);
+        console.log("the height = " + rectangle.h);
+
+        rectangle.area = function () {
+            console.log("the area= " + rectangle.w * rectangle.h);
+            }
+
+        rectangle.perimeter = function () {
+            console.log("the perimeter = "+ ((rectangle.w + rectangle.h) * 2));
+        }
+
+        rectangle.area();
+        rectangle.perimeter();
+          
+        </script>
+    </body>
+</html>
